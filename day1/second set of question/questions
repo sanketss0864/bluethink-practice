@@ -1,0 +1,11 @@
+ Q-1 Write Javascript code to declare a variable name and assign it the value of your name.Then,log this variable to the console.
+ Q-2 Write a function that takes a string as input and return the reverse of that string.For Example if the input is "hello", the output should be "olleh".
+ Q-3 Create an array of your favourite foods.then,write code to add a new food to the array and log the updated array to the console.
+ Q-4 Write a loop that  logs the number from 1 to 10 to the console.
+ Q-5 Create an object representing a person with properties for name,age and occupation.Then, log each property to the console.
+ Q-6 Given an array of numbers,write a function that returns that returns the sum of all positive numbers in the array.
+ Q-7 Given an array of strings,write a function that returns a new array containing only the strings that have a length greater than or equal to 5.
+ Q-8 Given an array of numbers,Write a function that  returns the average of all the number in the array.
+// const numbers =[2,4,6,8,10];
+ Q-9 Given an array of number,write a function that returns a new array where each element is the square of the Corresponding element in the original array using map method.
+ Q-10 Write a function that takes a positive integer n as input and returns the sum of all positive integers up to n.
