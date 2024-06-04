@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+<style>
+    .modal{
+width: 30%;
+box-shadow: 0px 0px 10px rgb(182, 182, 182);
+border-radius: 13px;
+padding: 20px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.visible{
+    display: block;
+}
+.notvisible{
+    display: none;
+}
+.modal-cont{
+
+}
+.model-text{
+
+}
+.modal-btns{
+
+}
+.modal-btn{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    width: fit-content;
+ padding: 10px 20px;
+    border-radius: 4px;
+    margin: 20px auto 0;
+}
+
+</style>
+<body>
+    <button id="popupbtn">open modal</button>
+    <div class="modal notvisible">
+        <div class="modal-cont">
+            <div class="model-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur pariatur voluptatem ab accusamus impedit aliquid exercitationem nesciunt fugiat eaque modi, quas quisquam nemo facere vitae corrupti error, ad quae.
+            </div>
+            <div class="modal-btns">
+<div class="modal-btn">
+ok
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
