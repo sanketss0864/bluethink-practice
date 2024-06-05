@@ -51,15 +51,40 @@
 // console.log(a.next().value)
 // console.log(a.next().value)
 
-function* gen(){
 
-    console.log(yield)
-    console.log(yield)
-    console.log(yield)
-}
+// function* gen2(name){
+// yield `value provided by another generator ${name}`
+// }
+// function* gen(name){
+// yield `hi ${name}`
+// yield* gen2(name)
+// yield `bye ${name}`
+// }
+// let a =gen("ram")
+// console.log(a.next().value)
+// console.log(a.next().value)
+// console.log(a.next().value)
 
-let a =gen()
-a.next()
-a.next("shiv")
-a.next("ram")
-a.next("shyam")
+
+// function* gen(){
+
+//     console.log(yield)
+//     console.log(yield)
+//     console.log(yield)
+// }
+
+// let a =gen()
+// a.next()
+// a.next("shiv")
+// a.next("ram")
+// a.next("shyam")
+
+
+// function* gen(){
+// yield* [1,2,3,4]
+// }
+// const a=gen();
+// console.log(a.next().value)
+// console.log(a.next().value)
+// console.log(a.next().value)
+// console.log(a.next().value)
