@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+.hero-sec {
+  background-color: #f79f1a;
+  padding: 20px 0px 90px;
+  overflow: hidden;
+  .hero-cont {
+    display: flex;
+    width: 98%;
+    align-items: center;
+    margin-left: auto;
+    justify-content: space-between;
+    .hero-l {
+      width: 40%;
+      padding: 20px 0;
+      position: relative;
+      .hero-head {
+        color: #63400a;
+        font-size: 2.8rem;
+        font-weight: 700;
+      }
+      .hero-subhead {
+        color: white;
+        font-size: 1.8rem;
+        margin: 20px 0;
+        font-weight: 700;
+        span {
+          color: #e93434;
+        }
+      }
+      .hero-para {
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+        margin: 0px 0 90px;
+      }
+      .hero-btn {
+        background: #e93434;
+        box-shadow: 5px 5px 10px #45454559;
+        width: fit-content;
+        padding: 15px 25px;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+   
+      }
+    }
+    .hero-r {
+      width: 60%;
+      position: relative;
+      .hero-r-img {
+        img {
+          transform: rotate(17deg);
+          width: 90%;
+          position: relative;
+          right: -50px;
+        }
+      }
+      .hero-r-review-card {
+        position: absolute;
+        width: 190px;
+        padding: 10px;
+        bottom: 20px;
+        left: -20px;
+        backdrop-filter: blur(21px);
+        border-radius: 12px;
+        background-color: #00000054;
+
+        .hero-r-review-card-cont {
+          padding: 10px;
+          border-radius: 12px;
+          background-color: white;
+          font-size: 12px;
+          .hero-r-review-card-stars {
+            padding-bottom: 10px;
+          }
+          .hero-r-review-message {
+            line-height: 1.5;
+          }
+        }
+        .hero-r-review-card-bottom {
+          padding: 5px 10px 0px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .hero-r-review-card-bottom-img {
+            img {
+              width: 30px;
+              border-radius: 50%;
+            }
+          }
+          .hero-r-review-card-name {
+            color: white;
+            font-size: 12px;
+          }
+        }
+      }
+      .hero-r-review-card:nth-child(2){
+bottom: -80px;
+left: 19rem;
+      }
+    }
+  }
+}
+.navigation {
+
+width: 100%;
+
+
+	.navigation-cont {
+    display: flex;
+  
+    width: 92%;
+    margin: auto;
+		.web-logo {
+display: flex;
+align-items: center;
+width: 20%;
+gap: 5px;
+			img {
+width: 33px;
+			}
+			.logo-text {
+font-size: 1.7rem;
+font-weight: 500;
+color: white;
+			}
+		}
+		.searchbar {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      width: 30%;
+      margin: auto;
+			.searchbar-l {
+        background-color: rgba(255, 255, 255, 0.495);
+padding: 10px 10px;
+border-radius: 15px 0 0 15px;
+display: flex;
+align-items: center;
+img{
+  height: 25px;
+}
+				input {
+border: none;
+background-color: transparent;
+outline: none;
+padding: 5px 10px;
+width: 300px;
+				}
+			}
+			.searchbar-r {
+        background-color: rgba(255, 255, 255, 0.495);
+        padding: 13px 10px;
+        font-weight: 600;
+        border-radius: 0 15px 15px 0;
+     
+			}
+		}
+		.navlinks {
+width: 30%;
+			ul {
+display: flex;
+gap: 10px;
+				li.navlinks {
+list-style: none;
+font-weight: 600;
+				}
+			}
+		}
+		.profile-icon {
+display: flex;
+justify-content: center;
+align-items: center;
+		}
+	}
+}
+@media(max-width:1000px){
+  .navigation .navigation-cont .searchbar {
+    width: 100px;
+  }
+}
+@media(max-width:800px){
+  .navigation .navigation-cont .searchbar {
+    display: none;
+  }
+  .navigation .navigation-cont .navlinks {
+    display: none;
+  }
+  .navigation .navigation-cont {
+    justify-content: space-between;
+}
+.navigation .navigation-cont .web-logo {
+
+  width: 54%;
+}
+.hero-sec .hero-cont {
+  flex-wrap: wrap;
+}
+.hero-sec .hero-cont .hero-l,.hero-sec .hero-cont .hero-r {
+  width: 100%;
+}
+.hero-sec .hero-cont .hero-r .hero-r-review-card:nth-child(2) {
+  bottom: 263px;
+  left: 13rem;
+}
+.hero-sec .hero-cont .hero-r .hero-r-review-card {
+  bottom: -81px;
+  left: 52px;
+
+}
+}
