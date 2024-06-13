@@ -1,0 +1,85 @@
+body {
+  margin: 0 !important;
+  padding: 0;
+}
+.application-slider {
+  background-color: #b0d072;
+  padding: 40px 0;
+  .application-slider-cont {
+    .application-slider-subhead {
+      text-align: center;
+      font-size: 0.9rem;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .application-slider-head {
+      text-align: center;
+      color: white;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    .application-slider-cards {
+      width: 63%;
+      margin: auto;
+      .application-slider-cards-cont {
+        .application-slider-card {
+         
+          .application-slider-card-cont{
+            display: flex;
+            gap: 10px;
+            .application-slider-card-l {
+                padding: 1rem;
+    
+                color: white;
+                border: 1px solid white;
+                width: 50%;
+                border-radius: 5px;
+                .application-slider-card-head {
+                  text-align: center;
+                  font-family: "Roboto", sans-serif;
+                  font-size: 21px;
+                  margin-top: 20%;
+                  margin-bottom: 12px;
+                  text-transform: uppercase;
+                }
+                .application-slider-card-head-para {
+                  font-family: "Roboto", sans-serif;
+                  font-size: 14px;
+                  line-height: 1.8;
+                  text-align: center;
+                }
+              }
+              .application-slider-card-r {
+                width: 50%;
+                img {
+                  width: 100%;
+                  border-radius: 5px;
+                }
+              }
+          }
+        
+        }
+      }
+    }
+  }
+}
+@media (max-width:760px) {
+  .application-slider .application-slider-cont .application-slider-cards .application-slider-cards-cont .application-slider-card .application-slider-card-cont {
+ flex-wrap: wrap;
+}
+.application-slider .application-slider-cont .application-slider-cards .application-slider-cards-cont .application-slider-card .application-slider-card-cont .application-slider-card-l {
+ width: 100%;
+}
+.application-slider .application-slider-cont .application-slider-cards .application-slider-cards-cont .application-slider-card .application-slider-card-cont .application-slider-card-r {
+  width: 100%;
+}
+.application-slider .application-slider-cont .application-slider-cards {
+  width: 70%;
+}
+
+.application-slider .application-slider-cont .application-slider-subhead {
+  font-size: 1.2rem;
+}
+}

@@ -1,0 +1,33 @@
+body {
+  background-color: #d5e1ef;
+}
+
+.qrcode {
+  width: 230px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0px 0px 8px gainsboro;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+.qrcode .qrcode-cont {
+  text-align: center;
+}
+.qrcode .qrcode-cont .qrcode-img img {
+  width: 100%;
+  border-radius: 14px;
+}
+.qrcode .qrcode-cont .qr-head {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(9, 15, 31);
+  margin: 10px 0;
+}
+.qrcode .qrcode-cont .qr-text {
+  font-size: 13px;
+  color: rgb(122, 122, 122);
+}/*# sourceMappingURL=style.css.map */
