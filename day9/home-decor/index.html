@@ -1,72 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="./js/main.js" defer></script>
-</head>
-
-<body>
-  <div class="navbar">
-    <div class="navbar-cont">
-      <div class="navbar-top">
-        <div class="navbar-profile-logos">
-          <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-snapchat"></i><i
-            class="fa-brands fa-instagram"></i><i class="fa-brands fa-tiktok"></i>
-        </div>
-        <div class="social-details">
-          <div class="social-detail">
-            <i class="fa-solid fa-globe"></i>
-            English
-          </div>
-          <div class="social-detail">
-            <i class="fa-regular fa-envelope"></i>
-            dmm@gmail.com
-          </div>
-          <div class="social-detail">
-            <i class="fa-solid fa-phone"></i>
-            +9102938797
-          </div>
-        </div>
+  <body>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title mobile-menu-img"><img src="./assets/logo decor.png" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="navbar-mid">
-        <div class="navbar-logo">
-          <img src="./assets/logo decor.png" alt="" />
-        </div>
-        <div class="search-box">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search" />
-          <div class="category">
-            category
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-        </div>
-        <div class="nav-mid-actions">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-bell"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <img src="./assets/profileimg.jpeg" alt="" />
-        </div>
-      </div>
-      <div class="navbar-bottom">
+      <div class="offcanvas-body">
+       
         <ul>
           <li>Fabrics & Bedding <i class="fa-solid fa-chevron-down"></i></li>
           <li>Furniture <i class="fa-solid fa-chevron-down"></i></li>
@@ -83,305 +61,436 @@
         </ul>
       </div>
     </div>
-  </div>
-  <div class="hero-slider">
-    <div class="hero-slider-cont swiper">
-      <div class="hero-slider-cards swiper-wrapper">
-        <div class="hero-slider-card swiper-slide">
-          <a href="category.html">
-            <img src="./assets/banner2.png" alt="" />
-          </a>
-        </div>
-        <div class="hero-slider-card swiper-slide">
-          <a href="category.html">
-            <video src="./assets/bannervid.mp4" autoplay muted></video>
-          </a>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </div>
-  <div class="item-sec">
-    <div class="item-sec-cont">
-      <div class="item-sec-head">
-        <div class="item-sec-head-l">Offer</div>
-        <div class="item-sec-head-r">
-          <div class="item-sec-head-btns">
-            <div class="item-sec-head-btn">See all</div>
-            <div class="item-sec-head-btn">
-              <i class="fa-solid fa-chevron-left"></i>
-            </div>
-            <div class="item-sec-head-btn">
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
+    <div class="mobile-nav">
+      <div class="mobile-nav-cont">
+        <div class="mobile-nav-top"><div class="mobile-nav-logo"><img src="./assets/logo decor.png" alt=""></div><div class="mobile-nav-address-cont"><span>Delivering to</span><div class="mobile-nav-address">Noida,Uttar Pradesh</div></div> <div class="mobile-nav-menubtn" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" ><i class="fa-solid fa-bars"></i></div></div>
+        <div class="mobile-nav-bottom">
+          <div class="mobile-nav-search">
+           <input type="text" name="" id="" placeholder="search">
+           <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-        </div>
-      </div>
-      <div class="item-sec-tabs">
-        <div class="sec-tab">60% off</div>
-        <div class="sec-tab">40% off</div>
-        <div class="sec-tab">30% off</div>
-        <div class="sec-tab">Buy 1 get 1</div>
-        <div class="sec-tab">Min 50%</div>
-      </div>
-      <div class="item-sec-cards">
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
-            </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
-            </div>
-          </div>
-        </div>
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
-            </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
-            </div>
-          </div>
-        </div>
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
-            </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
-            </div>
-          </div>
-        </div>
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
-            </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
-            </div>
+          <div class="mobile-nav-notification">
+            <i class="fa-solid fa-bell"></i>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="item-sec">
-    <div class="item-sec-cont">
-      <div class="item-sec-head">
-        <div class="item-sec-head-l">Trending</div>
-        <div class="item-sec-head-r">
-          <div class="item-sec-head-btns">
-            <div class="item-sec-head-btn">See all</div>
-            <div class="item-sec-head-btn">
-              <i class="fa-solid fa-chevron-left"></i>
+    <div class="navbar">
+      <div class="navbar-cont">
+        <div class="navbar-top">
+          <div class="navbar-profile-logos">
+            <i class="fa-brands fa-facebook"></i
+            ><i class="fa-brands fa-snapchat"></i
+            ><i class="fa-brands fa-instagram"></i
+            ><i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="social-details">
+            <div class="social-detail">
+              <i class="fa-solid fa-globe"></i>
+              English
             </div>
-            <div class="item-sec-head-btn">
-              <i class="fa-solid fa-chevron-right"></i>
+            <div class="social-detail">
+              <i class="fa-regular fa-envelope"></i>
+              dmm@gmail.com
+            </div>
+            <div class="social-detail">
+              <i class="fa-solid fa-phone"></i>
+              +9102938797
             </div>
           </div>
+        </div>
+        <div class="navbar-mid">
+          <div class="navbar-logo">
+            <img src="./assets/logo decor.png" alt="" />
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+            <div class="category">
+              category
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="nav-mid-actions">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img src="./assets/profileimg.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="navbar-bottom">
+          <ul>
+            <li>Fabrics & Bedding <i class="fa-solid fa-chevron-down"></i></li>
+            <li>Furniture <i class="fa-solid fa-chevron-down"></i></li>
+            <li>
+              Home Decor & Lighting <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li>Kitchen & Dining <i class="fa-solid fa-chevron-down"></i></li>
+            <li>Outdoor & Camping <i class="fa-solid fa-chevron-down"></i></li>
+            <li>Sport & Fitness <i class="fa-solid fa-chevron-down"></i></li>
+            <li>
+              Tools & Home improvment <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li>Automotive <i class="fa-solid fa-chevron-down"></i></li>
+          </ul>
         </div>
       </div>
-      <div class="item-sec-tabs">
-        <div class="sec-tab"><i class="fa-solid fa-chair"></i>Chairs</div>
-        <div class="sec-tab"><i class="fa-solid fa-couch"></i>Sofa</div>
-        <div class="sec-tab"><i class="fa-solid fa-bed"></i>Bed</div>
-        <div class="sec-tab">
-          <i class="fa-solid fa-toilet-portable"></i>Table
+    </div>
+    <div class="hero-slider">
+      <div class="hero-slider-cont swiper">
+        <div class="hero-slider-cards swiper-wrapper">
+          <div class="hero-slider-card swiper-slide">
+            <a href="category.html">
+              <img src="./assets/banner2.png" alt="" />
+            </a>
+          </div>
+          <div class="hero-slider-card swiper-slide">
+            <a href="category.html">
+              <video src="./assets/bannervid.mp4" autoplay muted></video>
+            </a>
+          </div>
         </div>
-        <div class="sec-tab">
-          <i class="fa-solid fa-box-archive"></i>Storage
-        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="item-sec-cards">
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
+    </div>
+    <div class="item-sec">
+      <div class="item-sec-cont">
+        <div class="item-sec-head">
+          <div class="item-sec-head-l">Offer</div>
+          <div class="item-sec-head-r">
+            <div class="item-sec-head-btns">
+              <div class="item-sec-head-btn">See all</div>
+              <div class="item-sec-head-btn" id="offer-prev">
+                <i class="fa-solid fa-chevron-left"></i>
               </div>
-            </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
-            </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
+              <div class="item-sec-head-btn" id="offer-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
             </div>
           </div>
         </div>
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
-            </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
-            </div>
-          </div>
+        <div class="item-sec-tabs">
+          <div class="sec-tab active">60% off</div>
+          <div class="sec-tab">40% off</div>
+          <div class="sec-tab">30% off</div>
+          <div class="sec-tab">Buy 1 get 1</div>
+          <div class="sec-tab">Min 50%</div>
         </div>
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
+        <div class="offerslider">
+          <div class="item-sec-cards swiper-wrapper">
+            <div class="item-sec-card swiper-slide">
+              <div class="item-sec-card-top">
+                <div class="item-sec-card-rating">
+                  4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="item-sec-card-discount">-20%</div>
+              </div>
+              <div class="item-sec-card-img">
+                <img src="./assets/item-img.png" alt="" />
+              </div>
+              <div class="item-sec-card-bottom">
+                <div class="item-sec-card-bottom-top">
+                  <div class="item-sec-card-bottom-l">Alhome</div>
+                  <div class="item-sec-card-bottom-r">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="item-sec-card-head">
+                  NERVUP Computer Desk Study Writing Table for Home Office Home
+                </div>
+                <div class="item-sec-card-prices">
+                  <div class="item-sec-card-origional-price">SAR 1248.76</div>
+                  <div class="item-sec-card-discounted-price">Sar 999</div>
+                </div>
               </div>
             </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
-            </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
-            </div>
-          </div>
-        </div>
-        <div class="item-sec-card">
-          <div class="item-sec-card-top">
-            <div class="item-sec-card-rating">
-              4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </div>
-            <div class="item-sec-card-discount">-20%</div>
-          </div>
-          <div class="item-sec-card-img">
-            <img src="./assets/item-img.png" alt="" />
-          </div>
-          <div class="item-sec-card-bottom">
-            <div class="item-sec-card-bottom-top">
-              <div class="item-sec-card-bottom-l">Alhome</div>
-              <div class="item-sec-card-bottom-r">
-                <i class="fa-regular fa-heart"></i>
+            <div class="item-sec-card swiper-slide">
+              <div class="item-sec-card-top">
+                <div class="item-sec-card-rating">
+                  4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="item-sec-card-discount">-20%</div>
+              </div>
+              <div class="item-sec-card-img">
+                <img src="./assets/item-img.png" alt="" />
+              </div>
+              <div class="item-sec-card-bottom">
+                <div class="item-sec-card-bottom-top">
+                  <div class="item-sec-card-bottom-l">Alhome</div>
+                  <div class="item-sec-card-bottom-r">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="item-sec-card-head">
+                  NERVUP Computer Desk Study Writing Table for Home Office Home
+                </div>
+                <div class="item-sec-card-prices">
+                  <div class="item-sec-card-origional-price">SAR 1248.76</div>
+                  <div class="item-sec-card-discounted-price">Sar 999</div>
+                </div>
               </div>
             </div>
-            <div class="item-sec-card-head">
-              NERVUP Computer Desk Study Writing Table for Home Office Home
+            <div class="item-sec-card swiper-slide">
+              <div class="item-sec-card-top">
+                <div class="item-sec-card-rating">
+                  4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="item-sec-card-discount">-20%</div>
+              </div>
+              <div class="item-sec-card-img">
+                <img src="./assets/item-img.png" alt="" />
+              </div>
+              <div class="item-sec-card-bottom">
+                <div class="item-sec-card-bottom-top">
+                  <div class="item-sec-card-bottom-l">Alhome</div>
+                  <div class="item-sec-card-bottom-r">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="item-sec-card-head">
+                  NERVUP Computer Desk Study Writing Table for Home Office Home
+                </div>
+                <div class="item-sec-card-prices">
+                  <div class="item-sec-card-origional-price">SAR 1248.76</div>
+                  <div class="item-sec-card-discounted-price">Sar 999</div>
+                </div>
+              </div>
             </div>
-            <div class="item-sec-card-prices">
-              <div class="item-sec-card-origional-price">SAR 1248.76</div>
-              <div class="item-sec-card-discounted-price">Sar 999</div>
+            <div class="item-sec-card swiper-slide">
+              <div class="item-sec-card-top">
+                <div class="item-sec-card-rating">
+                  4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="item-sec-card-discount">-20%</div>
+              </div>
+              <div class="item-sec-card-img">
+                <img src="./assets/item-img.png" alt="" />
+              </div>
+              <div class="item-sec-card-bottom">
+                <div class="item-sec-card-bottom-top">
+                  <div class="item-sec-card-bottom-l">Alhome</div>
+                  <div class="item-sec-card-bottom-r">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="item-sec-card-head">
+                  NERVUP Computer Desk Study Writing Table for Home Office Home
+                </div>
+                <div class="item-sec-card-prices">
+                  <div class="item-sec-card-origional-price">SAR 1248.76</div>
+                  <div class="item-sec-card-discounted-price">Sar 999</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-sec-card swiper-slide">
+              <div class="item-sec-card-top">
+                <div class="item-sec-card-rating">
+                  4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="item-sec-card-discount">-20%</div>
+              </div>
+              <div class="item-sec-card-img">
+                <img src="./assets/item-img.png" alt="" />
+              </div>
+              <div class="item-sec-card-bottom">
+                <div class="item-sec-card-bottom-top">
+                  <div class="item-sec-card-bottom-l">Alhome</div>
+                  <div class="item-sec-card-bottom-r">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="item-sec-card-head">
+                  NERVUP Computer Desk Study Writing Table for Home Office Home
+                </div>
+                <div class="item-sec-card-prices">
+                  <div class="item-sec-card-origional-price">SAR 1248.76</div>
+                  <div class="item-sec-card-discounted-price">Sar 999</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="marketing-banner-sec">
-    <div class="marketing-banner-cont">
-      <div class="marketing-banner">
-        <img src="./assets/item-table.jpg" alt="" />
+    <div class="item-sec">
+      <div class="item-sec-cont">
+        <div class="item-sec-head">
+          <div class="item-sec-head-l">Trending</div>
+          <div class="item-sec-head-r">
+            <div class="item-sec-head-btns">
+              <div class="item-sec-head-btn">See all</div>
+              <div class="item-sec-head-btn" id="trend-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="item-sec-head-btn" id="trend-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-sec-tabs">
+          <div class="sec-tab active">
+            <i class="fa-solid fa-chair"></i>Chairs
+          </div>
+          <div class="sec-tab"><i class="fa-solid fa-couch"></i>Sofa</div>
+          <div class="sec-tab"><i class="fa-solid fa-bed"></i>Bed</div>
+          <div class="sec-tab">
+            <i class="fa-solid fa-toilet-portable"></i>Table
+          </div>
+          <div class="sec-tab">
+            <i class="fa-solid fa-box-archive"></i>Storage
+          </div>
+        </div>
+<div class="trendslider">
+  <div class="item-sec-cards swiper-wrapper">
+    <div class="item-sec-card swiper-slide">
+      <div class="item-sec-card-top">
+        <div class="item-sec-card-rating">
+          4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+        </div>
+        <div class="item-sec-card-discount">-20%</div>
       </div>
-      <div class="marketing-banner">
-        <img src="./assets/item-lamp.jpg" alt="" />
+      <div class="item-sec-card-img">
+        <img src="./assets/item-img.png" alt="" />
       </div>
-      <div class="marketing-banner">
-        <img src="./assets/item-table.jpg" alt="" />
+      <div class="item-sec-card-bottom">
+        <div class="item-sec-card-bottom-top">
+          <div class="item-sec-card-bottom-l">Alhome</div>
+          <div class="item-sec-card-bottom-r">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="item-sec-card-head">
+          NERVUP Computer Desk Study Writing Table for Home Office Home
+        </div>
+        <div class="item-sec-card-prices">
+          <div class="item-sec-card-origional-price">SAR 1248.76</div>
+          <div class="item-sec-card-discounted-price">Sar 999</div>
+        </div>
+      </div>
+    </div>
+    <div class="item-sec-card swiper-slide">
+      <div class="item-sec-card-top">
+        <div class="item-sec-card-rating">
+          4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+        </div>
+        <div class="item-sec-card-discount">-20%</div>
+      </div>
+      <div class="item-sec-card-img">
+        <img src="./assets/item-img.png" alt="" />
+      </div>
+      <div class="item-sec-card-bottom">
+        <div class="item-sec-card-bottom-top">
+          <div class="item-sec-card-bottom-l">Alhome</div>
+          <div class="item-sec-card-bottom-r">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="item-sec-card-head">
+          NERVUP Computer Desk Study Writing Table for Home Office Home
+        </div>
+        <div class="item-sec-card-prices">
+          <div class="item-sec-card-origional-price">SAR 1248.76</div>
+          <div class="item-sec-card-discounted-price">Sar 999</div>
+        </div>
+      </div>
+    </div>
+    <div class="item-sec-card swiper-slide">
+      <div class="item-sec-card-top">
+        <div class="item-sec-card-rating">
+          4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+        </div>
+        <div class="item-sec-card-discount">-20%</div>
+      </div>
+      <div class="item-sec-card-img">
+        <img src="./assets/item-img.png" alt="" />
+      </div>
+      <div class="item-sec-card-bottom">
+        <div class="item-sec-card-bottom-top">
+          <div class="item-sec-card-bottom-l">Alhome</div>
+          <div class="item-sec-card-bottom-r">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="item-sec-card-head">
+          NERVUP Computer Desk Study Writing Table for Home Office Home
+        </div>
+        <div class="item-sec-card-prices">
+          <div class="item-sec-card-origional-price">SAR 1248.76</div>
+          <div class="item-sec-card-discounted-price">Sar 999</div>
+        </div>
+      </div>
+    </div>
+    <div class="item-sec-card swiper-slide">
+      <div class="item-sec-card-top">
+        <div class="item-sec-card-rating">
+          4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+        </div>
+        <div class="item-sec-card-discount">-20%</div>
+      </div>
+      <div class="item-sec-card-img">
+        <img src="./assets/item-img.png" alt="" />
+      </div>
+      <div class="item-sec-card-bottom">
+        <div class="item-sec-card-bottom-top">
+          <div class="item-sec-card-bottom-l">Alhome</div>
+          <div class="item-sec-card-bottom-r">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="item-sec-card-head">
+          NERVUP Computer Desk Study Writing Table for Home Office Home
+        </div>
+        <div class="item-sec-card-prices">
+          <div class="item-sec-card-origional-price">SAR 1248.76</div>
+          <div class="item-sec-card-discounted-price">Sar 999</div>
+        </div>
+      </div>
+    </div>
+    <div class="item-sec-card swiper-slide">
+      <div class="item-sec-card-top">
+        <div class="item-sec-card-rating">
+          4.6<i class="fa-solid fa-star" style="color: #ffd43b"></i>
+        </div>
+        <div class="item-sec-card-discount">-20%</div>
+      </div>
+      <div class="item-sec-card-img">
+        <img src="./assets/item-img.png" alt="" />
+      </div>
+      <div class="item-sec-card-bottom">
+        <div class="item-sec-card-bottom-top">
+          <div class="item-sec-card-bottom-l">Alhome</div>
+          <div class="item-sec-card-bottom-r">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="item-sec-card-head">
+          NERVUP Computer Desk Study Writing Table for Home Office Home
+        </div>
+        <div class="item-sec-card-prices">
+          <div class="item-sec-card-origional-price">SAR 1248.76</div>
+          <div class="item-sec-card-discounted-price">Sar 999</div>
+        </div>
       </div>
     </div>
   </div>
-</body>
-
+</div>
+      </div>
+    </div>
+    <div class="marketing-banner-sec">
+      <div class="marketing-banner-cont">
+        <div class="marketing-banner">
+          <img src="./assets/item-table.jpg" alt="" />
+        </div>
+        <div class="marketing-banner">
+          <img src="./assets/item-lamp.jpg" alt="" />
+        </div>
+        <div class="marketing-banner">
+          <img src="./assets/item-table.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
