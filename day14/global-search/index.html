@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    document.getElementById('searchform').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:https://developer.mozilla.org/en-US/ ' + document.getElementById('test').value;
+        return false;
+    }
+    </script>
+<body>
+    <form id="sarchform" class="search2" method="get" action="" >
+    <input class="search2" id="test" type="text" name="search" size="10" maxlength="255"/>
+    </form>
+
+</body>
+</html>

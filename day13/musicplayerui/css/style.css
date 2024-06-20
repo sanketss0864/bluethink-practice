@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.musicplayer {
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px gainsboro;
+  margin: 20px 0;
+}
+.musicplayer .musicplayer-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* transform: translate(-50%, -50%); */
+  /* height: 100%; */
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.musicplayer .musicplayer-bg img {
+  height: 100%;
+}
+.musicplayer .musicplayer-cont {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.352);
+  padding: 20px;
+}
+.musicplayer .musicplayer-cont .playlist-name {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(70, 70, 70);
+  font-weight: 500;
+}
+.musicplayer .musicplayer-cont .player-img {
+  padding: 10px;
+  margin: 10px 0;
+}
+.musicplayer .musicplayer-cont .player-img img {
+  width: 100%;
+  border-radius: 9px;
+}
+.musicplayer .musicplayer-cont .player-song-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.musicplayer .musicplayer-cont .player-song-cont .player-song-details .player-song {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(41, 41, 41, 0.8078431373);
+}
+.musicplayer .musicplayer-cont .player-song-cont .player-song-details .player-artist {
+  font-size: 14px;
+}
+.musicplayer .musicplayer-cont .player-song-cont .player-like i.fal.fa-heart {
+  font-size: 30px;
+  color: rgba(174, 174, 174, 0.55);
+}
+.musicplayer .musicplayer-cont .player-controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.musicplayer .musicplayer-cont .player-controls .player-btn-prev {
+  font-size: 30px;
+}
+.musicplayer .musicplayer-cont .player-controls .player-btn-prev i.fad.fa-chevron-left {
+  --fa-primary-color: #e8e8e8;
+  --fa-secondary-color: #ffffff;
+  text-shadow: 0px 0px 10px gainsboro;
+}
+.musicplayer .musicplayer-cont .player-controls .player-btn-play {
+  font-size: 50px;
+}
+.musicplayer .musicplayer-cont .player-controls .player-btn-play i.fad.fa-play-circle {
+  --fa-primary-color: #e8e8e8;
+  --fa-secondary-color: #ffffff;
+  text-shadow: 0px 0px 20px rgb(165, 165, 165);
+}
+.musicplayer .musicplayer-cont .player-controls .player-btn-next {
+  font-size: 30px;
+}
+.musicplayer .musicplayer-cont .player-controls .player-btn-next i.fad.fa-chevron-right {
+  --fa-primary-color: #e8e8e8;
+  text-shadow: 0px 0px 10px gainsboro;
+  --fa-secondary-color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

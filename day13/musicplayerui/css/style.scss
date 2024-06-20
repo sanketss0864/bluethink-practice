@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.musicplayer {
+width: 400px;
+overflow: hidden;
+position: relative;
+z-index: 1;
+border-radius: 12px;
+box-shadow: 0px 0px 10px gainsboro;
+margin: 20px 0;
+	.musicplayer-bg {
+        position: absolute;
+   left: 0;
+   right: 0;
+        /* transform: translate(-50%, -50%); */
+        /* height: 100%; */
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+		img {
+height: 100%;
+		}
+	}
+	.musicplayer-cont {
+backdrop-filter: blur(20px);
+background-color: rgba(255, 255, 255, 0.352);
+padding: 20px;
+		.playlist-name {
+text-align: center;
+font-size: 15px;
+color: rgb(70, 70, 70);
+font-weight: 500;
+		}
+		.player-img {
+            padding: 10px;
+            margin: 10px 0;
+            img{
+                width: 100%;
+                border-radius: 9px;
+            }
+		}
+		.player-song-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+padding: 0 30px;
+			.player-song-details {
+				.player-song {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #292929ce;
+				}
+				.player-artist {
+font-size: 14px;
+				}
+			}
+			.player-like {
+
+				i.fal.fa-heart {
+                    font-size: 30px;
+                    color: rgba(174, 174, 174, 0.55);
+				}
+			}
+		}
+		.player-controls {
+display: flex;
+justify-content: center;
+gap: 30px;
+align-items: center;
+			.player-btn-prev {
+font-size: 30px;
+				i.fad.fa-chevron-left {
+                    --fa-primary-color: #e8e8e8;
+                    --fa-secondary-color: #ffffff;
+              text-shadow: 0px 0px 10px gainsboro;
+				}
+			}
+			.player-btn-play {
+                font-size: 50px;
+				i.fad.fa-play-circle {
+                    --fa-primary-color: #e8e8e8;
+                    --fa-secondary-color: #ffffff;
+                    text-shadow: 0px 0px 20px rgb(165, 165, 165);
+				}
+			}
+			.player-btn-next {
+                font-size: 30px;
+				i.fad.fa-chevron-right {
+                    --fa-primary-color: #e8e8e8;
+                    text-shadow: 0px 0px 10px gainsboro;
+                    --fa-secondary-color: #ffffff;
+				}
+			}
+		}
+	}
+}
